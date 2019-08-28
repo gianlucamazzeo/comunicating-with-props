@@ -4,7 +4,24 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 const App = () => {
-   return <div>Hi there!</div>
+   return (
+            <div className="ui container comments">
+                <div className="comment">
+                    <a href="/" className="avatar">
+                        <img alt="avatar" />
+                    </a>
+                        <div className="content">
+                            <a href="/" className="author">
+                                Sam
+                            </a>
+                            <div className="metadata">
+                                <span className="date">Oggi è il 28</span>
+                            </div>
+                            <div className="text">Nice Blog!</div>
+                        </div>
+                    </div>
+                </div>
+   );
 };
 
 // Take the react component and show it on the screen
@@ -17,7 +34,8 @@ ReactDOM.render( <App />, document.querySelector('#root') );
 // for installing libraries use search on google
 // semantic ui cdn   ---  https://cdnjs.com/libraries/semantic-ui   
 // cdnjs.cloudflare.com/ajax/libs/semantic.min.js 
-// https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.js
+// https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css
+// npm install --save faker
 
 
 
