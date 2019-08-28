@@ -1,16 +1,17 @@
 import React from 'react';
 
-const approvalCard = () => {
-
+const approvalCard = props => {
+    //console.log(props);
     return(
-        <div className="ui cards" style={{marginBottom:'10px'}}>
-            <div class="content" style={{marginRight:'5px'}}>Sei sicuro?</div>
-                <div class="extra content">
-                <div class="ui two buttons">
-                    <div class="ui basic green button">Approve</div>
-                    <div class="ui basic red button">Decline</div>
+        <div className="ui card">
+            <div className="content"></div>
+                <div className="extra content">
+                <div className="ui two buttons">
+                    <div className="ui basic green button">Approve</div>
+                    <div className="ui basic red button">Decline</div>
                 </div>
                 </div>
+            {props.children}
         </div>
         
     )
