@@ -2,6 +2,7 @@ import React from 'react';
 
 const approvalCard = props => {
     //console.log(props);
+    // call the children
     return(
         <div className="ui card">
             <div className="content"></div>
@@ -11,7 +12,7 @@ const approvalCard = props => {
                     <div className="ui basic red button">Decline</div>
                 </div>
                 </div>
-            {props.children}
+            {props.children}   
         </div>        
     )   
 }
