@@ -12,12 +12,7 @@ const approvalCard = props => {
                 </div>
                 </div>
             {props.children}
-        </div>
-        
-    )
-
-   
+        </div>        
+    )   
 }
-
-
 export default approvalCard;
